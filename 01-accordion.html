@@ -17,7 +17,7 @@
     <div class="accordion">
       <div class="item">
         <p class="number">01</p>
-        <p class="text">How long do i have to return my chair?</p>
+        <p class="text">Where are these chairs assembled?</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -50,7 +50,7 @@
           </ul>
         </div>
       </div>
-      <div class="item open">
+      <div class="item">
         <p class="number">02</p>
         <p class="text">How long do i have to return my chair?</p>
         <svg
@@ -87,7 +87,7 @@
       </div>
       <div class="item">
         <p class="number">03</p>
-        <p class="text">How long do i have to return my chair?</p>
+        <p class="text">Do you ship to countries outside the EU?</p>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -121,5 +121,14 @@
         </div>
       </div>
     </div>
+    <script>
+      const accordion = document.getElementsByClassName("item");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("open");
+        });
+      }
+    </script>
   </body>
 </html>
