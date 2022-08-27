@@ -73,10 +73,12 @@ body {
 
 .open{
   border-top: 4px solid #087f5b;
+  
 }
 
 .open .hidden-box{
   display: block;
+  
 }
 
 .open .number , .open .text{
