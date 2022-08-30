@@ -1,0 +1,88 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+/* 
+MAIN COLOR: #087f5b
+GREY COLOR: #343a40
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main: #087f5b;
+  --grey: #343a40;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+body {
+  font-family: "Inter", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  width: 800px;
+  margin: 100px auto;
+  margin-top: 200px;
+  /* display: flex;
+    justify-content: center; */
+}
+.pagination,
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+.nav-element {
+  list-style-type: none;
+  border-radius: 50%;
+  background-color: #fff;
+  height: 35px;
+  width: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-element:hover {
+  background-color: #0cb381;
+  color: #fff;
+}
+.nav-point {
+  list-style-type: none;
+}
+.active {
+  background-color: #087f5b;
+  color: #fff;
+}
+.active:hover {
+  background-color: #087f5b;
+  color: #fff;
+}
+.btn {
+  border: 1px solid #087f5b;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  stroke: #087f5b;
+}
+.btn:hover {
+  background-color: #087f5b;
+  stroke: #fff;
+}
