@@ -12,21 +12,40 @@ body {
   width: 1200px;
 }
 
-header{
-    background-color: orangered;
-    height: 100vh;
+header {
+  background-color: orangered;
+  height: 100vh;
+  position: relative;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.6),
+      rgba(34, 34, 34, 0.6)
+    ),
+    url(hero.jpg);
+  background-size: cover;
+  color: #fff;
 }
 
 nav {
   font-size: 20px;
   font-weight: 700;
+  padding-top: 32px;
   display: flex;
   justify-content: space-between;
-  background-color: green;
+}
+.header-container {
+  width: 1200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-container-inner {
+  width: 50%;
 }
 h1 {
   font-size: 52px;
   margin-bottom: 32px;
+  line-height: 1.05;
 }
 p {
   font-size: 20px;
